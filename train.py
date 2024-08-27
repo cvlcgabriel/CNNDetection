@@ -17,7 +17,7 @@ from options.train_options import TrainOptions
 """Currently assumes jpg_prob, blur_prob 0 or 1"""
 def get_val_opt():
     val_opt = TrainOptions().parse(print_options=False)
-    val_opt.dataroot = '{}/{}/'.format(val_opt.dataroot, val_opt.val_split)
+    val_opt.dataroot = '{}/{}'.format(val_opt.dataroot, val_opt.val_split)
     val_opt.isTrain = False
     val_opt.no_resize = False
     val_opt.no_crop = False
@@ -35,7 +35,7 @@ def get_val_opt():
 
 if __name__ == '__main__':
     opt = TrainOptions().parse()
-    opt.dataroot = '{}/{}/'.format(opt.dataroot, opt.train_split)
+    opt.dataroot = '{}/{}'.format(opt.dataroot, opt.train_split)
     val_opt = get_val_opt()
 
     data_loader = create_dataloader(opt)
