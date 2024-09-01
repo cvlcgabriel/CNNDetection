@@ -6,11 +6,10 @@ results_dir = './results/'
 mkdir(results_dir)
 
 # root to the testsets
-dataroot = './dataset/test/'
+dataroot = './dataset/test'
 
 # list of synthesis algorithms
-vals = ['progan', 'stylegan', 'biggan', 'cyclegan', 'stargan', 'gaugan',
-        'crn', 'imle', 'seeingdark', 'san', 'deepfake', 'stylegan2', 'whichfaceisreal']
+vals = 'stylegan'
 
 # indicates if corresponding testset has multiple classes
 multiclass = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
