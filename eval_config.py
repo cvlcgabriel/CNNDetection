@@ -9,7 +9,7 @@ mkdir(results_dir)
 dataroot = '/content/CNNDetection/dataset/test'
 
 # list of synthesis algorithms
-vals = ['stylegan']
+vals = ['stylegan', 'deepfake']
 
 # indicates if corresponding testset has multiple classes
 multiclass = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
